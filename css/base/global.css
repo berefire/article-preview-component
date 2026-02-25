@@ -1,0 +1,10 @@
+html {
+  background-color: var(--white);
+  font-family: var(--font-family-base);
+  -webkit-text-size-adjust: 100%;
+}
+
+html,
+body {
+  min-block-size: 100%;
+}
