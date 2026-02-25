@@ -1,0 +1,4 @@
+.box--article-card {
+    padding-inline: calc( 30 / var(--base) * 1rem);
+    padding-block: 0 calc( 18 / var(--base) * 1rem);
+}

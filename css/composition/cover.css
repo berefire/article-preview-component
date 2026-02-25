@@ -1,0 +1,14 @@
+.cover{
+    min-block-size: 100vh; /* Fallback for older browsers */
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@supports (min-block-size: 100dvh) {
+    .cover {
+        min-block-size: 100dvh; /* Override with dynamic viewport height if supported */
+    }
+}

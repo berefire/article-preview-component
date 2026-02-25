@@ -1,5 +1,5 @@
 html {
-  background-color: var(--white);
+  background-color: var(--bg-primary);
   font-family: var(--font-family-base);
   -webkit-text-size-adjust: 100%;
 }

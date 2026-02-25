@@ -1,0 +1,7 @@
+.stack--information > * + *{
+    margin-block-start: var(--stack-article-card-information);
+}
+
+.stack--content > * + *{
+    margin-block-start: var(--stack-article-card-content);
+}

@@ -22,6 +22,9 @@
     --spacing-1300: calc(104 / var(--base) * 1rem);  /* 104px */
     --spacing-2000: calc(160 / var(--base) * 1rem);  /* 160px */
 
+    /* Border radius */
+    --border-radius-100: calc(10 / var(--base) * 1rem);  /* 4px */
+
     /* Typography */
     --font-family-base: 'Manrope', sans-serif;
 
@@ -35,5 +38,50 @@
     /* Font weight */
     --font-weight-medium: 500;
     --font-weight-bold: 700;
+
+    /* SEMANTIC VARIABLES */
+    /* Component-specific variables */
+    --gap-article-card: var(--spacing-400);
+    --gap-profile-info: var(--spacing-200);
+    --gap-profile-date: var(--spacing-800);
+    --stack-article-card-information: var(--spacing-300);
+    --stack-article-card-content: var(--spacing-600);
+
+    /* Font sizes */
+    --fs-text-title: var(--font-size-800);
+    --fs-text-body: var(--font-size-100);
+
+    /* Font colors */
+    --fc-text-title: var(--grey-900);
+    --fc-text-body: var(--grey-500);
+
+    /* Background colors */
+    --bg-primary: var(--grey-200);
+    --bg-article-card: var(--white);
+
+    /* Line heights */
+    --lh-text-title: var(--line-height-300);
+    --lh-text-body: var(--line-height-400);
+
+    /* Font weights */
+    --fw-text-title: var(--font-weight-bold);
+    --fw-text-body: var(--font-weight-medium);
+
+    /* Letter spacing scale */
+    --tracking-tight: 0.0012em;
+    --tracking-normal: 0.0156em;
+    --tracking-wide: 0.25em;
+
+    /* Size image */
+    --image-block-size-profile: var(--spacing-500);
+    --image-inline-size-profile: var(--spacing-500);
+
+    /* Size share button */
+    --share-button-block-size: var(--spacing-400);
+    --share-button-inline-size: var(--spacing-400);
+
+    /* Border radius card*/
+    --border-radius-card: var(--border-radius-100);
+    
 
 }

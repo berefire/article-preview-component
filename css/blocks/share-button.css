@@ -1,0 +1,9 @@
+.share-button {
+    display: grid;
+    place-items: center;
+    padding: 0;
+    block-size: var(--share-button-block-size);
+    inline-size: var(--share-button-inline-size);
+    border-radius: 50%;
+    border: none;
+}

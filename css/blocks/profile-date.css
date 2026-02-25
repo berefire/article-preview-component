@@ -1,0 +1,33 @@
+.profile-date__image {
+    block-size: var(--image-block-size-profile);
+    inline-size: var(--image-inline-size-profile);
+}
+
+.profile-date__image img {
+    block-size: 100%;
+    inline-size: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.profile-date__name {
+    font-size: var(--fs-text-body);
+    color: var(--fc-text-title);
+    line-height: var(--lh-text-body);
+    letter-spacing: var(--tracking-tight);
+    font-weight: var(--fw-text-title);
+}
+
+.profile-date__date {
+    font-size: var(--fs-text-body);
+    color: var(--fc-text-body);
+    line-height: var(--lh-text-body);
+    letter-spacing: var(--tracking-tight);
+    font-weight: var(--fw-text-body);
+}
+
+.profile-date__button {
+    margin-block: auto;
+    margin-inline: auto;
+}
+

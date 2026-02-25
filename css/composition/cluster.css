@@ -1,0 +1,11 @@
+.cluster--profile-info {
+    display: inline-flex;
+    flex-direction: row;
+    gap: var(--gap-profile-info);
+}
+
+.cluster--profile-date {
+    display: inline-flex;
+    flex-direction: row;
+    gap: var(--gap-profile-date);
+}
