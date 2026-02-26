@@ -9,3 +9,10 @@
         padding-block: calc( 41 / var(--base) * 1rem)
     }
 }
+
+@media (min-width: 64em){
+    .box--article-card {
+        padding-inline: 0 calc( 40 / var(--base) * 1rem);
+        padding-block: calc( 30 / var(--base) * 1rem)
+    }
+}

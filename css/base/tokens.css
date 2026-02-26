@@ -99,3 +99,9 @@
         --gap-profile-date: var(--spacing-1300);
     }
 }
+
+@media (min-width: 64em) {
+    :root {
+        --gap-profile-date: var(--spacing-2000);
+    }
+}
