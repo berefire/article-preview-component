@@ -2,3 +2,10 @@
     padding-inline: calc( 30 / var(--base) * 1rem);
     padding-block: 0 calc( 18 / var(--base) * 1rem);
 }
+
+@media (min-width: 48em){
+    .box--article-card {
+        padding-inline: 0 calc( 36 / var(--base) * 1rem);
+        padding-block: calc( 41 / var(--base) * 1rem)
+    }
+}

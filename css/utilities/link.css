@@ -1,0 +1,16 @@
+.link {
+    color: var(--fc-text-link);
+    text-decoration: underline;
+    text-decoration-thickness: var(--thickness-s);
+    text-underline-offset: var(--offset-m);
+}
+
+.link:hover,
+.link:focus-visible {
+    text-decoration-thickness: var(--thickness-m);
+}
+
+.link:focus-visible {
+    outline: var(--offset-s) solid var(--color-link);
+    outline-offset: var(--offset-s);
+}

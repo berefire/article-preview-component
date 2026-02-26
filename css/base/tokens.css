@@ -6,6 +6,7 @@
     --grey-500: hsl(214, 17%, 51%);
     --grey-400: hsl(212, 23%, 69%);
     --grey-200: hsl(210,46%, 95%);
+    --blue: hsl(228, 45%, 44%);
 
     /* Base */
     --base: 16;
@@ -54,6 +55,7 @@
     /* Font colors */
     --fc-text-title: var(--grey-900);
     --fc-text-body: var(--grey-500);
+    --fc-text-link: var(--blue);
 
     /* Background colors */
     --bg-primary: var(--grey-200);
@@ -83,5 +85,17 @@
     /* Border radius card*/
     --border-radius-card: var(--border-radius-100);
     
+     /* Decoration thicknesss */
+    --thickness-s: 0.08em;
 
+    /* Undeline-offset */
+    --offset-m: 0.15em;
+    --offset-s: 0.125em;    /* 2px */
+}
+
+@media (min-width: 48em) {
+    :root {
+        --stack-article-card-content: var(--spacing-300);
+        --gap-profile-date: var(--spacing-1300);
+    }
 }

@@ -6,5 +6,11 @@ html {
 
 html,
 body {
-  min-block-size: 100%;
+  min-height: 100dvh;
+}
+
+
+body {
+  display: flex;
+  flex-direction: column;
 }
