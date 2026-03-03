@@ -45,6 +45,8 @@
     --gap-article-card: var(--spacing-400);
     --gap-profile-info: var(--spacing-200);
     --gap-profile-date: var(--spacing-800);
+    --gap-share-toast: var(--spacing-300);
+    --gap-icon-socials: var(--spacing-200);
     --stack-article-card-information: var(--spacing-300);
     --stack-article-card-content: var(--spacing-600);
 
@@ -56,10 +58,13 @@
     --fc-text-title: var(--grey-900);
     --fc-text-body: var(--grey-500);
     --fc-text-link: var(--blue);
+    --fc-share: var(--grey-400);
 
     /* Background colors */
     --bg-primary: var(--grey-200);
     --bg-article-card: var(--white);
+    --bg-share-toast: var(--grey-900);
+    --bg-button-share-active: var(--grey-500);
 
     /* Line heights */
     --lh-text-title: var(--line-height-300);

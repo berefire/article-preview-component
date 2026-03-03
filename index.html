@@ -11,6 +11,7 @@
   <title>Frontend Mentor | Article preview component</title>
 
   <link rel="stylesheet" href="./css/main.css" type="text/css">
+  <script defer  type="module" src="./js/main.js"></script>
 </head>
 
 <body class="[ grid ]">
@@ -46,20 +47,40 @@
 
           <div class="[ profile-date__button ]">
             <button class="[ share-button ]">
-              <img src="./assets/images/icon-share.svg" width="15" height="13" alt="Share">
-            </button>
-          </div>
-
-          <div class="share-toast">
-            Share
+                <svg xmlns="http://www.w3.org/2000/svg" class="share-button__icon" width="15" height="13"><path fill="currentColor" d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"/></svg>
+              </button>
           </div>
         </div>
+        <div class="[ share-toast ]">
+            <nav class="[ share-toast__nav ] [ box--share-toast ]" arial-label="Share this article">
+              <span class="[ share-toast__text ]">Share</span>
+
+              <ul class="[ share-toast__socials ]">
+                <li class="[ share-toast__list ]">
+                  <a href="#" class="[ share-toast__link share-toast__link--facebook ]">
+                    <img src="./assets/images/icon-facebook.svg" width="20" height="20" alt="Facebook">
+                  </a>
+                </li>
+                <li class="[ share-toast__list ]">
+                  <a href="#" class="[ share-toast__link share-toast__link--twitter ]">
+                    <img src="./assets/images/icon-twitter.svg" width="20" height="20" alt="Twitter">
+                  </a>
+                </li>
+                <li class="[ share-toast__list ]">
+                  <a href="#" class="[ share-toast__link share-toast__link--pinterest ]">
+                    <img src="./assets/images/icon-pinterest.svg" width="20" height="20" alt="Pinterest">
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
     </article>
 
   </main>
 
   <div class="attribution">
-    Challenge by <a class="[ link ]" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Challenge by <a class="[ link ]" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend
+      Mentor</a>.
     Coded by <a class="[ link ]" href="#">Berefire</a>.
   </div>
 
