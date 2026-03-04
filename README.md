@@ -78,7 +78,7 @@ Users should be able to:
 
 ## 🔗 Links
 
-- Solution URL:
+- Solution URL: [https://www.frontendmentor.io/solutions/article-preview-component-with-cube-css-and-accessible-js-ZDPF0p1CXT](https://www.frontendmentor.io/solutions/article-preview-component-with-cube-css-and-accessible-js-ZDPF0p1CXT)
 - Live Site URL: [https://berefire.github.io/article-preview-component/](https://berefire.github.io/article-preview-component/)
 
 ---
