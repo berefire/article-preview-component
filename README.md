@@ -66,10 +66,13 @@ Users should be able to:
 
 ## 📸 Screenshot
 
-| _Mobile Preview (375x914)_
-| -----------------------------------
-|
-|
+| _Mobile Preview (375x914)_                     | _Mobile Active State Preview (375x914)_                                |
+| ---------------------------------------------- | ---------------------------------------------------------------------- |
+| ![Mobile](./assets/screenshots/mobile.png)     | ![Mobile Active State](./assets/screenshots/mobile-active-state.png)   |
+| _Tablet Preview (768x914)_                     | _Tablet Active State Preview (768x914)_                                |
+| ![Tablet](./assets/screenshots/tablet.png)     | ![Tablet Active State](./assets/screenshots/tablet-active-state.png)   |
+| _Desktop Preview (1024x914)_                   | _Desktop Active State Preview (1024x914)_                              |
+| ![Desktop](./assets/screenshots/desktop.png)   | ![Desktop Active State](./assets/screenshots/desktop-active-state.png) |
 
 ---
 
