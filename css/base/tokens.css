@@ -1,112 +1,127 @@
-:root  {
-    /* PRIMITIVES VARIABLES */
-    /* Colors */
-    --white: hsl(0, 100%, 100%);
-    --grey-900: hsl(217, 19%, 35%);
-    --grey-500: hsl(214, 17%, 51%);
-    --grey-400: hsl(212, 23%, 69%);
-    --grey-200: hsl(210,46%, 95%);
-    --blue: hsl(228, 45%, 44%);
+:root {
+  /* PRIMITIVES VARIABLES */
+  /* Colors */
+  --white: hsl(0, 100%, 100%);
+  --grey-900: hsl(217, 19%, 35%);
+  --grey-500: hsl(214, 17%, 51%);
+  --grey-400: hsl(212, 23%, 69%);
+  --grey-200: hsl(210, 46%, 95%);
+  --blue: hsl(228, 45%, 44%);
 
-    /* Base */
-    --base: 16;
+  /* Base */
+  --base: 16;
 
-    /* Spacing */
-    --spacing-0: 0;
-    --spacing-200: calc(16 / var(--base) * 1rem);  /* 16px */
-    --spacing-300: calc(24 / var(--base) * 1rem);  /* 24px */
-    --spacing-400: calc(32 / var(--base) * 1rem);  /* 32px */
-    --spacing-500: calc(40 / var(--base) * 1rem);  /* 40px */
-    --spacing-600: calc(48 / var(--base) * 1rem);  /* 48px */
-    --spacing-700: calc(56 / var(--base) * 1rem);  /* 56px */
-    --spacing-800: calc(64 / var(--base) * 1rem);  /* 64px */
-    --spacing-1300: calc(104 / var(--base) * 1rem);  /* 104px */
-    --spacing-2000: calc(160 / var(--base) * 1rem);  /* 160px */
+  /* Spacing */
+  --spacing-0: 0;
+  --spacing-200: calc(16 / var(--base) * 1rem); /* 16px */
+  --spacing-300: calc(24 / var(--base) * 1rem); /* 24px */
+  --spacing-400: calc(32 / var(--base) * 1rem); /* 32px */
+  --spacing-500: calc(40 / var(--base) * 1rem); /* 40px */
+  --spacing-600: calc(48 / var(--base) * 1rem); /* 48px */
+  --spacing-700: calc(56 / var(--base) * 1rem); /* 56px */
+  --spacing-800: calc(64 / var(--base) * 1rem); /* 64px */
+  --spacing-1300: calc(104 / var(--base) * 1rem); /* 104px */
+  --spacing-2000: calc(160 / var(--base) * 1rem); /* 160px */
 
-    /* Border radius */
-    --border-radius-100: calc(10 / var(--base) * 1rem);  /* 4px */
+  /* Border radius */
+  --border-radius-100: calc(10 / var(--base) * 1rem); /* 4px */
 
-    /* Typography */
-    --font-family-base: 'Manrope', sans-serif;
+  /* Typography */
+  --font-family-base: "Manrope", sans-serif;
 
-    --font-size-100: calc(13 / var(--base) * 1rem);  /* 13px */
-    --font-size-800: calc(20 / var(--base) * 1rem);  /* 20px */
+  --font-size-100: calc(13 / var(--base) * 1rem); /* 13px */
+  --font-size-800: calc(20 / var(--base) * 1rem); /* 20px */
 
-    /* Line height */
-    --line-height-300: 1.3;
-    --line-height-400: 1.4;
+  /* Line height */
+  --line-height-300: 1.3;
+  --line-height-400: 1.4;
 
-    /* Font weight */
-    --font-weight-medium: 500;
-    --font-weight-bold: 700;
+  /* Font weight */
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
 
-    /* SEMANTIC VARIABLES */
-    /* Component-specific variables */
-    --gap-article-card: var(--spacing-400);
-    --gap-profile-info: var(--spacing-200);
-    --gap-profile-date: var(--spacing-800);
-    --gap-share-toast: var(--spacing-300);
-    --gap-icon-socials: var(--spacing-200);
-    --stack-article-card-information: var(--spacing-300);
-    --stack-article-card-content: var(--spacing-600);
+  /* SEMANTIC VARIABLES */
+  /* Component-specific variables */
+  --gap-article-card: var(--spacing-400);
+  --gap-profile-info: var(--spacing-200);
+  --gap-profile-date: var(--spacing-800);
+  --gap-share-toast: var(--spacing-300);
+  --gap-icon-socials: var(--spacing-200);
+  --stack-article-card-information: var(--spacing-300);
+  --stack-article-card-content: var(--spacing-600);
 
-    /* Font sizes */
-    --fs-text-title: var(--font-size-800);
-    --fs-text-body: var(--font-size-100);
+  /* Font sizes */
+  --fs-text-title: var(--font-size-800);
+  --fs-text-body: var(--font-size-100);
 
-    /* Font colors */
-    --fc-text-title: var(--grey-900);
-    --fc-text-body: var(--grey-500);
-    --fc-text-link: var(--blue);
-    --fc-share: var(--grey-400);
+  /* Font colors */
+  --fc-text-title: var(--grey-900);
+  --fc-text-body: var(--grey-500);
+  --fc-text-link: var(--blue);
+  --fc-share: var(--grey-400);
 
-    /* Background colors */
-    --bg-primary: var(--grey-200);
-    --bg-article-card: var(--white);
-    --bg-share-toast: var(--grey-900);
-    --bg-button-share-active: var(--grey-500);
+  /* Background colors */
+  --bg-primary: var(--grey-200);
+  --bg-article-card: var(--white);
+  --bg-share-toast: var(--grey-900);
+  --bg-button-share-active: var(--grey-500);
 
-    /* Line heights */
-    --lh-text-title: var(--line-height-300);
-    --lh-text-body: var(--line-height-400);
+  /* Line heights */
+  --lh-text-title: var(--line-height-300);
+  --lh-text-body: var(--line-height-400);
 
-    /* Font weights */
-    --fw-text-title: var(--font-weight-bold);
-    --fw-text-body: var(--font-weight-medium);
+  /* Font weights */
+  --fw-text-title: var(--font-weight-bold);
+  --fw-text-body: var(--font-weight-medium);
 
-    /* Letter spacing scale */
-    --tracking-tight: 0.0012em;
-    --tracking-normal: 0.0156em;
-    --tracking-wide: 0.25em;
+  /* Letter spacing scale */
+  --tracking-tight: 0.0012em;
+  --tracking-normal: 0.0156em;
+  --tracking-wide: 0.25em;
 
-    /* Size image */
-    --image-block-size-profile: var(--spacing-500);
-    --image-inline-size-profile: var(--spacing-500);
+  /* Size image */
+  --image-block-size-profile: var(--spacing-500);
+  --image-inline-size-profile: var(--spacing-500);
 
-    /* Size share button */
-    --share-button-block-size: var(--spacing-400);
-    --share-button-inline-size: var(--spacing-400);
+  /* Size share button */
+  --share-button-block-size: var(--spacing-400);
+  --share-button-inline-size: var(--spacing-400);
 
-    /* Border radius card*/
-    --border-radius-card: var(--border-radius-100);
-    
-     /* Decoration thicknesss */
-    --thickness-s: 0.08em;
+  /* Border radius card*/
+  --border-radius-card: var(--border-radius-100);
 
-    /* Undeline-offset */
-    --offset-m: 0.15em;
-    --offset-s: 0.125em;    /* 2px */
+  /* Decoration thicknesss */
+  --thickness-s: 0.08em;
+
+  /* Undeline-offset */
+  --offset-m: 0.15em;
+  --offset-s: 0.125em; /* 2px */
+
+  /* Animation duration */
+  --duration-fast: 150ms;
+  --duration-toast-open: 200ms;
+  --duration-toast-fade: 300ms;
+
+  --easing-default: ease-in-out;
+
+  /* Shadows */
+  --shadow-card: 0px 30px 60px -10px rgba(201, 213, 225, 0.4);
+  --shadow-toast: 0 10px 10px rgba(201, 213, 225, 0.5);
+
+  /* Size image triangle */
+  --triangle-inline-size: var(--spacing-300);
 }
 
 @media (min-width: 48em) {
-    :root {
-        --stack-article-card-content: var(--spacing-300);
-        --gap-profile-date: var(--spacing-1300);
-    }
+  :root {
+    --stack-article-card-content: var(--spacing-300);
+    --gap-profile-date: var(--spacing-1300);
+  }
 }
 
 @media (min-width: 64em) {
-    :root {
-        --gap-profile-date: var(--spacing-2000);
-    }
+  :root {
+    --gap-article-card: var(--spacing-500);
+    --gap-profile-date: var(--spacing-2000);
+  }
 }

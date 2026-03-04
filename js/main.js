@@ -1,3 +1,3 @@
-import { initShareToggle } from "./modules/share-toggle.js";
+import { initShare } from "./modules/share-toast.js";
 
-initShareToggle();
+initShare();

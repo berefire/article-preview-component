@@ -1,34 +1,26 @@
 .share-button {
-    padding: 0;
-    block-size: var(--share-button-block-size);
-    inline-size: var(--share-button-inline-size);
-    color: var(--bg-button-share-active);
-    background-color: var(--bg-primary);
-    border-radius: 50%;
-    border: none;
-    position: relative;
-    z-index: 2;
+  position: relative;
+  z-index: 10;
+  padding: 0;
+  block-size: var(--share-button-block-size);
+  inline-size: var(--share-button-inline-size);
+  color: var(--bg-button-share-active);
+  background-color: var(--bg-primary);
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+
+  transition:
+    transform var(--duration-fast),
+    background-color var(--duration-toast-fade),
+    color var(--duration-toast-fade);
 }
 
 .share-button.is-active {
-    background-color: var(--bg-button-share-active);
-    color: var(--white);
+  background-color: var(--bg-button-share-active);
+  color: var(--white);
 }
 
 .share-button:hover {
-    background-color: var(--bg-button-share-active);
-    color: var(--white);
-    transform: scale(1.2);
-}
-
-
-@media (prefers-reduced-motion: no-preference) {
-    .share-button {
-    transition: transform 0.15s ease-in-out, background-color 0.3s ease-in-out,
-      color 0.3s ease-in-out;
-  }
-
-  .share-button__icon{
-    transition: transform 0.15s ease-in-out, color 0.15s ease-in-out;
-  }
+  transform: scale(1.1);
 }
