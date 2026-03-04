@@ -24,3 +24,10 @@
 .share-button:hover {
   transform: scale(1.1);
 }
+
+/* Disable or simplify transitions for users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .share-button {
+  transition: none; /* Turn off transitions completely */
+  }
+}

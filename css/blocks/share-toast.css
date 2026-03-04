@@ -82,3 +82,10 @@
     inset-inline-start: 48%;
   }
 }
+
+/* Disable or simplify transitions for users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .share-toast.is-active {
+  transition: none; /* Turn off transitions completely */
+  }
+}
