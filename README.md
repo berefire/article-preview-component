@@ -79,7 +79,7 @@ Users should be able to:
 ## 🔗 Links
 
 - Solution URL:
-- Live Site URL:
+- Live Site URL: [https://berefire.github.io/article-preview-component/](https://berefire.github.io/article-preview-component/)
 
 ---
 
