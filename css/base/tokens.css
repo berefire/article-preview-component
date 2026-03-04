@@ -65,6 +65,7 @@
   --bg-article-card: var(--white);
   --bg-share-toast: var(--grey-900);
   --bg-button-share-active: var(--grey-500);
+  --bg-link: var(--blue);
 
   /* Line heights */
   --lh-text-title: var(--line-height-300);

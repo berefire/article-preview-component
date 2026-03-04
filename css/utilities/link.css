@@ -11,6 +11,6 @@
 }
 
 .link:focus-visible {
-    outline: var(--offset-s) solid var(--color-link);
+    outline: var(--offset-s) solid var(--bg-link);
     outline-offset: var(--offset-s);
 }
