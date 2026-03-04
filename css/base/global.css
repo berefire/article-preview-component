@@ -6,16 +6,21 @@ html {
 
 html,
 body {
-  min-height: 100dvh;
+  min-block-size: 100vh;
 }
-
 
 body {
   display: flex;
   flex-direction: column;
 }
 
-@media (prefers-reduced-motion: no-preference) {
+address {
+  display: inline;
+}
 
-
+@supports (min-block-size: 100dvh) {
+  html,
+  body {
+    min-block-size: 100dvh;
+  }
 }
