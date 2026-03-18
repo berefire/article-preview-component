@@ -16,7 +16,7 @@
     color var(--duration-toast-fade);
 }
 
-.is-active {
+.button--is-active {
   background-color: var(--bg-button-share-active);
   color: var(--white);
 }
@@ -25,9 +25,18 @@
   transform: scale(1.1);
 }
 
-/* Disable or simplify transitions for users who prefer reduced motion */
+/* Visible focus for keyboard users only */
+.share-button:focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--accent-color) 80%, black); /* high-contrast ring */
+  outline-offset: 3px; /* separates outline from the element for clarity */
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent-color) 15%, transparent); /* subtle halo */
+  /* avoid transform changes here so focus doesn't move unexpectedly */
+}
+
+/* Respect users who prefer reduced motion */
 @media (prefers-reduced-motion: reduce) {
-  .share-button {
-  transition: none; /* Turn off transitions completely */
+  .share-button:focus-visible,
+  .share-button:hover {
+    transition: none; /* reduces motion for those who requested it */
   }
 }

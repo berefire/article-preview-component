@@ -1,6 +1,8 @@
-document.addEventListener("DOMContentLoaded", () => {
-  import("./modules/share-toast.js").then((module) => {
-    module.initShare();
-  });
-});
+import { initShare} from "./modules/share-toast.js";
+
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", initShare);
+} else {
+  initShare();
+}
 

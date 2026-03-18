@@ -10,7 +10,7 @@
   pointer-events: none;
 }
 
-.is-active {
+.toast--is-active {
   opacity: 1;
   transform: translateY(0);
   pointer-events: auto;
@@ -85,7 +85,7 @@
 
 /* Disable or simplify transitions for users who prefer reduced motion */
 @media (prefers-reduced-motion: reduce) {
-  .share-toast.is-active {
+  .toast--is-active {
   transition: none; /* Turn off transitions completely */
   }
 }
