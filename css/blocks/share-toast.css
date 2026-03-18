@@ -10,7 +10,7 @@
   pointer-events: none;
 }
 
-.share-toast.is-active {
+.is-active {
   opacity: 1;
   transform: translateY(0);
   pointer-events: auto;

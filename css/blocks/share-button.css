@@ -16,7 +16,7 @@
     color var(--duration-toast-fade);
 }
 
-.share-button.is-active {
+.is-active {
   background-color: var(--bg-button-share-active);
   color: var(--white);
 }

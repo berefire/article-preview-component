@@ -1,3 +1,6 @@
-import { initShare } from "./modules/share-toast.js";
+document.addEventListener("DOMContentLoaded", () => {
+  import("./modules/share-toast.js").then((module) => {
+    module.initShare();
+  });
+});
 
-initShare();

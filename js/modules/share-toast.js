@@ -1,8 +1,14 @@
-const shareButton = document.querySelector(".share-button");
-const shareToast = document.querySelector(".share-toast");
+const shareButton = document.getElementById("article-share-toggle");
+const shareToast = document.getElementById("share-panel");
+
+let isInitialized = false;
+let boundHandleClickOutside = null;
+let boundHandleEscape = null;
 
 function toggleShare() {
   const isActive = shareToast.classList.toggle("is-active");
+
+  shareToast.hidden = !isActive;
 
   shareButton.classList.toggle("is-active", isActive);
   shareButton.setAttribute("aria-expanded", String(isActive));
@@ -15,6 +21,7 @@ function toggleShare() {
 
 function closeShare() {
   shareToast.classList.remove("is-active");
+  shareToast.hidden = true;
   shareButton.classList.remove("is-active");
   shareButton.setAttribute("aria-expanded", "false");
 
@@ -37,9 +44,26 @@ function handleEscape(event) {
 }
 
 export function initShare() {
-  if (!shareButton || !shareToast) return;
+
+  if (!shareButton || !shareToast || isInitialized) return;
+
+  boundHandleClickOutside = handleClickOutside.bind(this);
+  boundHandleEscape = handleEscape.bind(this);
 
   shareButton.addEventListener("click", toggleShare);
-  document.addEventListener("pointerdown", handleClickOutside);
-  document.addEventListener("keydown", handleEscape);
+  document.addEventListener("pointerdown", boundHandleClickOutside);
+  document.addEventListener("keydown", boundHandleEscape);
+
+  isInitialized = true;
+}
+
+export function destroyShare() {
+  if (!isInitialized) return;
+  // remove listeners to avoid leaks and duplicate handlers
+  shareButton.removeEventListener("click", toggleShare);
+  document.removeEventListener("pointerdown", boundHandleClickOutside);
+  document.removeEventListener("keydown", boundHandleEscape);
+  boundHandleClickOutside = null;
+  boundHandleEscape = null;
+  isInitialized = false;
 }

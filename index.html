@@ -49,39 +49,36 @@
                 28 Jun 2020</time>
             </div>
           </div>
-
-          <div class="profile-date__button">
-            <button type="button" class="share-button" aria-label="Share this article" aria-expanded="false"
-              aria-controls="share-menu">
+            <button id="article-share-toggle" type="button" class="profile-date__button share-button" aria-label="Share this article" aria-expanded="false"
+              aria-controls="share-panel" aria-haspopup="menu">
               <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" class="share-button__icon"
                 width="15" height="13">
                 <path fill="currentColor"
                   d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z" />
               </svg>
             </button>
-          </div>
         </div>
-          <nav class="share-toast share-toast__nav box--share-toast" id="share-menu" aria-label="Social sharing options">
+          <div class="share-toast share-toast__nav box--share-toast" id="share-panel" aria-label="Social sharing options" hidden role="menu">
             <span class="share-toast__text">Share</span>
 
             <ul class="share-toast__socials">
               <li class="share-toast__list">
-                <a href="#" class="share-toast__link share-toast__link--facebook" aria-label="Share on Facebook">
+                <a href="#" class="share-toast__link share-toast__link--facebook" aria-label="Share on Facebook" role="menuitem">
                   <img src="./assets/images/icon-facebook.svg" width="20" height="20" alt="" aria-hidden="true">
                 </a>
               </li>
               <li class="share-toast__list">
-                <a href="#" class="share-toast__link share-toast__link--twitter" aria-label="Share on Twitter">
+                <a href="#" class="share-toast__link share-toast__link--twitter" aria-label="Share on Twitter" role="menuitem">
                   <img src="./assets/images/icon-twitter.svg" width="20" height="20" alt="" aria-hidden="true">
                 </a>
               </li>
               <li class="share-toast__list">
-                <a href="#" class="share-toast__link share-toast__link--pinterest" aria-label="Share on Pinterest">
+                <a href="#" class="share-toast__link share-toast__link--pinterest" aria-label="Share on Pinterest" role="menuitem">
                   <img src="./assets/images/icon-pinterest.svg" width="20" height="20" alt="" aria-hidden="true">
                 </a>
               </li>
             </ul>
-          </nav>
+          </div>
     </article>
 
   </main>
