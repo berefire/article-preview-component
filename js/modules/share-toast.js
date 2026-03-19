@@ -16,6 +16,10 @@ function toggleShare() {
   if (isActive) {
     const firstLink = shareToast.querySelector("a");
     firstLink?.focus();
+
+    shareToast.setAttribute("aria-hidden", "false");
+  } else {
+    shareToast.setAttribute("aria-hidden", "true");
   }
 }
 
@@ -24,6 +28,7 @@ function closeShare() {
   shareToast.hidden = true;
   shareButton.classList.remove("button--is-active");
   shareButton.setAttribute("aria-expanded", "false");
+  shareToast.setAttribute("aria-hidden", "true");
 
   shareButton.focus();
 }

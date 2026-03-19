@@ -9,6 +9,10 @@
   transform: translateY(10%);
   pointer-events: none;
 
+  transition:
+    opacity var(--duration-toast-fade) ease,
+    transform var(--duration-toast-open) cubic-bezier(.2,.8,.2,1);
+
   background-color: var(--bg-share-toast);
   border-radius: 0 0 var(--border-radius-card) var(--border-radius-card);
   display: flex;
@@ -21,10 +25,6 @@
   opacity: 1;
   transform: translateY(0);
   pointer-events: auto;
-
-  transition:
-    opacity var(--duration-toast-fade),
-    transform var(--duration-toast-open);
 }
 
 .share-toast__text {
@@ -80,7 +80,8 @@
 
 /* Disable or simplify transitions for users who prefer reduced motion */
 @media (prefers-reduced-motion: reduce) {
-  .toast--is-active {
+  .share-toast {
     transition: none; /* Turn off transitions completely */
+    transform: none;               /* avoid translating elements */
   }
 }
